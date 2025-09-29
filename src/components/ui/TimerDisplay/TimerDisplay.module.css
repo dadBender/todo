@@ -1,0 +1,82 @@
+.timerDisplay {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.timerContainer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.timerValue {
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-weight: 600;
+    color: #1f2937;
+    background: #f8fafc;
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+}
+
+.timerValue--sm {
+    font-size: 14px;
+    padding: 2px 6px;
+}
+
+.timerValue--md {
+    font-size: 16px;
+    padding: 4px 8px;
+}
+
+.timerValue--lg {
+    font-size: 18px;
+    padding: 6px 10px;
+}
+
+/* Лейбл */
+.timerLabel {
+    font-size: 14px;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.timerLabel--sm {
+    font-size: 12px;
+}
+
+.timerLabel--lg {
+    font-size: 16px;
+}
+
+.timerIcon {
+    color: #6b7280;
+    font-size: 16px;
+}
+
+.timerIcon--sm {
+    font-size: 14px;
+}
+
+.timerIcon--lg {
+    font-size: 18px;
+}
+
+.timerValue--warning {
+    color: #d97706;
+    background: #fef3c7;
+    border-color: #f59e0b;
+}
+
+.timerValue--critical {
+    color: #dc2626;
+    background: #fecaca;
+    border-color: #ef4444;
+}
+
+.timerValue--completed {
+    color: #059669;
+    background: #d1fae5;
+    border-color: #10b981;
+}

@@ -1,0 +1,69 @@
+.card {
+    background: white;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+/* Варианты */
+.card--default {
+    background: white;
+}
+
+.card--outlined {
+    background: transparent;
+    border: 1px solid #e2e8f0;
+}
+
+.card--filled {
+    background: #f8fafc;
+}
+
+/* Тени */
+.card--shadow-none {
+    box-shadow: none;
+}
+
+.card--shadow-sm {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card--shadow-md {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card--shadow-lg {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Отступы */
+.card--padding-none {
+    padding: 0;
+}
+
+.card--padding-sm {
+    padding: 16px;
+}
+
+.card--padding-md {
+    padding: 20px;
+}
+
+.card--padding-lg {
+    padding: 24px;
+}
+
+/* Hover эффект */
+.card--hoverable {
+    cursor: pointer;
+}
+
+.card--hoverable:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Для кликабельных карточек */
+.card--clickable:active {
+    transform: translateY(0);
+}

@@ -1,0 +1,84 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.circularProgress {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg {
+    transform: rotate(-90deg);
+}
+
+.backgroundCircle {
+    fill: none;
+    stroke: #f0f0f0;
+    stroke-linecap: round;
+}
+
+.progressCircle {
+    fill: none;
+    stroke-linecap: round;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Цвета для разных рейтингов */
+.excellent {
+    stroke: #28a745;
+}
+
+.good {
+    stroke: #20c997;
+}
+
+.average {
+    stroke: #ffc107;
+}
+
+.poor {
+    stroke: #fd7e14;
+}
+
+.critical {
+    stroke: #dc3545;
+}
+
+.textContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    line-height: 1;
+}
+
+.maxValue {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 2px;
+}
+
+.ratingText {
+    margin-top: 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.ratingText.excellent { color: #28a745; }
+.ratingText.good { color: #20c997; }
+.ratingText.average { color: #ffc107; }
+.ratingText.poor { color: #fd7e14; }
+.ratingText.critical { color: #dc3545; }
