@@ -1,0 +1,38 @@
+.nav {
+    background: #f0f0f0;
+    padding: 4px;
+    border-radius: 50px;
+    margin: 0;
+    position: relative;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+.slider {
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    border-radius: 50px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.sliderPosition0 {
+    left: 4px;
+    width: calc(50% - 4px);
+}
+
+.sliderPosition1 {
+    left: calc(50% + 2px);
+    width: calc(50% - 4px);
+}
